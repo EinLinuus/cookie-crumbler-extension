@@ -106,3 +106,98 @@ window.addEventListener('load', async () => {
 
 	console.log("[Cookie Crumbler] Complianze deny button clicked");
 });
+
+/**
+ * OneTrust
+ */
+window.addEventListener('load', async () => {
+	let container = null;
+	let securityCounter = 10;
+	do {
+		await new Promise(resolve => setTimeout(resolve, 1000));
+		container = document.querySelector('#onetrust-consent-sdk');
+	} while(!container && securityCounter-- > 0);
+
+	const rejectButton = document.querySelector('#onetrust-reject-all-handler');
+	if(!rejectButton) {
+		console.warn("[Cookie Crumbler] OneTrust reject button not found");
+		return;
+	}
+
+	// window.OneTrust.RejectAll();
+
+	rejectButton.click();
+
+	console.log("[Cookie Crumbler] OneTrust detected, rejected all cookies");
+});
+
+/**
+ * CSM (Consentmo)
+ */
+window.addEventListener('load', async () => {
+	if(!document.querySelector('.csm-cookie-consent')) {
+		return;
+	}
+
+	const rejectButton = document.querySelector('.cc-btn.cc-deny');
+	if(!rejectButton) {
+		console.warn("[Cookie Crumbler] CSM reject button not found");
+		return;
+	}
+
+	rejectButton.click();
+
+	console.log("[Cookie Crumbler] CSM reject button clicked");
+});
+
+/**
+ * Iubenda
+ */
+window.addEventListener('load', async () => {
+	if(!document.querySelector('#iubenda-cs-banner')) {
+		return;
+	}
+
+	const rejectButton = document.querySelector('.iubenda-cs-reject-btn');
+	if(!rejectButton) {
+		console.warn("[Cookie Crumbler] Iubenda reject button not found");
+		return;
+	}
+
+	rejectButton.click();
+
+	console.log("[Cookie Crumbler] Iubenda reject button clicked");
+});
+
+/**
+ * Consent Manager (consentmanager.net)
+ */
+window.addEventListener('load', async () => {
+	if(!document.querySelector('#cmpwrapper.cmpwrapper')) {
+		return;
+	}
+
+	console.log("[Cookie Crumbler] Consent Manager detected, unable to interact with iframe content, hiding instead");
+
+	document.body.style.overflow = '';
+});
+
+/**
+ * CMP2
+ */
+window.addEventListener('load', async () => {
+	if(!document.querySelector('#cmpbox.cmpbox')) {
+		return;
+	}
+
+	const rejectButton = document.querySelector('.cmpboxbtn.cmpboxbtnno');
+
+	if(!rejectButton) {
+		console.warn("[Cookie Crumbler] CMP2 reject button not found");
+		return;
+	}
+
+	rejectButton.click();
+
+	console.log("[Cookie Crumbler] CMP2 reject button clicked");
+});

@@ -14,6 +14,10 @@
 	display: none !important;
 }
 
+#usercentrics-root {
+	display: none !important;
+}
+
 /**
  * TrustArc / Truste
  */
@@ -63,5 +67,54 @@
  * Complianze
  */
 #cmplz-cookiebanner-container {
+	display: none !important;
+}
+
+/**
+ * OneTrust
+ */
+#onetrust-consent-sdk {
+	display: none !important;
+}
+
+/**
+ * Pandectes
+ */
+#pandectes-banner {
+	display: none !important;
+}
+
+/**
+ * CSM (Consentmo)
+ */
+.csm-cookie-consent {
+	display: none !important;
+}
+
+/**
+ * Iubenda
+ */
+#iubenda-cs-banner {
+	display: none !important;
+}
+
+/**
+ * SP Consent
+ */
+[class*="sp_message_container_"] {
+	display: none !important;
+}
+
+/**
+ * Consent Manager (consentmanager.net)
+ */
+#cmpwrapper.cmpwrapper:not(#fakeid) {
+	display: none !important;
+}
+
+/**
+ * CMP2
+ */
+#cmpbox.cmpbox {
 	display: none !important;
 }
