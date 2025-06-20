@@ -1,0 +1,67 @@
+/**
+ * Borlabs Cookie
+ */
+#BorlabsCookieBox,
+#BorlabsCookieWidget {
+	display: none !important;
+}
+
+/**
+ * Usercentrics / Cookiebot
+ */
+#CybotCookiebotDialogBodyUnderlay,
+#CybotCookiebotDialog {
+	display: none !important;
+}
+
+/**
+ * TrustArc / Truste
+ */
+.truste_overlay,
+.truste_box_overlay,
+#trustarcNoticeFrame {
+	display: none !important;
+}
+#consent_blackbar {
+	display: none !important;
+}
+
+/**
+ * Automattic
+ */
+.a8c-cookie-banner {
+	display: none !important;
+}
+
+/**
+ * Cookiebar
+ */
+.cookiebar[data-cookiebar] {
+	display: none !important;
+}
+
+/**
+ * CCM
+ */
+.ccm-blocked:not(#fakeid) {
+	overflow: unset !important;
+}
+.ccm-root {
+	display: none !important;
+}
+
+/**
+ * CookieYes
+ */
+.cky-consent-container,
+.cky-btn-revisit-wrapper,
+.cky-overlay {
+	display: none !important;
+}
+
+/**
+ * Complianze
+ */
+#cmplz-cookiebanner-container {
+	display: none !important;
+}

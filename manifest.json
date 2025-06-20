@@ -1,0 +1,19 @@
+{
+	"name": "Cookie Crumbler",
+	"version": "1.0",
+	"manifest_version": 3,
+	"description": "Get rid of cookie banners. Automatically hide and reject cookie banners on websites.",
+	"icons": {
+		"16": "icon-16.png",
+		"48": "icon-48.png",
+		"128": "icon-128.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["content.js"],
+			"css": ["style.css"],
+			"run_at": "document_start"
+		}
+	]
+}
