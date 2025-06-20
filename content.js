@@ -94,7 +94,7 @@ window.addEventListener('load', async () => {
 });
 
 /**
- * Complianze
+ * Complianz
  */
 window.addEventListener('load', async () => {
 	const denyButton = document.querySelector('.cmplz-btn.cmplz-deny');
