@@ -190,6 +190,8 @@ window.addEventListener('load', async () => {
 		return;
 	}
 
+	document.body.style.overflow = '';
+
 	const rejectButton = document.querySelector('.cmpboxbtn.cmpboxbtnno');
 
 	if(!rejectButton) {
@@ -200,4 +202,23 @@ window.addEventListener('load', async () => {
 	rejectButton.click();
 
 	console.log("[Cookie Crumbler] CMP2 reject button clicked");
+});
+
+/**
+ * Cookie Information
+ */
+window.addEventListener('load', async () => {
+	if(!document.querySelector('#coiOverlay')) {
+		return;
+	}
+
+	const rejectButton = document.querySelector('#coiOverlay .coi-banner__decline');
+	if(!rejectButton) {
+		console.warn("[Cookie Crumbler] Cookie Information reject button not found");
+		return;
+	}
+
+	rejectButton.click();
+
+	console.log("[Cookie Crumbler] Cookie Information reject button clicked");
 });

@@ -115,6 +115,47 @@
 /**
  * CMP2
  */
+#cmpbox2,
 #cmpbox.cmpbox {
+	display: none !important;
+}
+
+body:has(#cmpbox2, #cmpbox.cmpbox) {
+	overflow: unset !important;
+}
+
+/**
+ * Cookie Information
+ */
+#coiOverlay {
+	display: none !important;
+}
+
+/**
+ * PiwikPro
+ */
+[id^="ppms_cm_consent_popup_"],
+[id^="ppms_cm_consent_bar_"] {
+	display: none !important;
+}
+
+/**
+ * Termly
+ */
+[class*="termly-styles-root-"] {
+	display: none !important;
+}
+
+/**
+ * Wix CCSU
+ */
+[class][data-hook="ccsu-banner-wrapper"] {
+	display: none !important;
+}
+
+/**
+ * TX OM Consent
+ */
+.tx-om-cookie-consent {
 	display: none !important;
 }
