@@ -36,6 +36,9 @@
 .a8c-cookie-banner {
 	display: none !important;
 }
+.wp-block-privacy-tools-consent-banner {
+	display: none !important;
+}
 
 /**
  * Cookiebar
