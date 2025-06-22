@@ -21,5 +21,10 @@
 			"resources": ["onpage-script.js"],
 			"matches": ["<all_urls>"]
 		}
-	]
+	],
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "cookie-crumbler@ihatecookiebanners.com"
+		}
+	}
 }
