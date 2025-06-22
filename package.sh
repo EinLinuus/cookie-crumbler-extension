@@ -11,6 +11,7 @@ files=(
   "icon-16.png"
   "icon-48.png"
   "icon-128.png"
+  "onpage-script.js"
 )
 
 if [[ -f "$name" ]]; then
