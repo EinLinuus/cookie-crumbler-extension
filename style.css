@@ -190,3 +190,10 @@ body:has(#cmpbox2, #cmpbox.cmpbox) {
 .cookiefirst-root {
 	display: none !important;
 }
+
+/**
+ * HubSpot
+ */
+#hs-eu-cookie-confirmation {
+	display: none !important;
+}
