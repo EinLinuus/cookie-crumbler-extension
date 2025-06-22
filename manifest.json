@@ -1,6 +1,6 @@
 {
 	"name": "Cookie Crumbler",
-	"version": "1.0",
+	"version": "1.1",
 	"manifest_version": 3,
 	"description": "Get rid of cookie banners. Automatically hide and reject cookie banners on websites.",
 	"icons": {
