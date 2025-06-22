@@ -197,3 +197,10 @@ body:has(#cmpbox2, #cmpbox.cmpbox) {
 #hs-eu-cookie-confirmation {
 	display: none !important;
 }
+
+/**
+ * Nord Security
+ */
+#consent-widget-container {
+	display: none !important;
+}
