@@ -66,3 +66,17 @@ window.addEventListener('load', () => {
 
     console.log('[Cookie Crumbler] Shopify PC Banner found and rejected');
 });
+
+/**
+ * Cookie First
+ */
+window.addEventListener('load', () => {
+    const rejectButton = document.querySelector('[data-cookiefirst-action="reject"]')
+    if(!rejectButton) {
+        return;
+    }
+
+    rejectButton.click();
+
+    console.log('[Cookie Crumbler] CookieFirst consent banner rejected');
+})

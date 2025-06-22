@@ -183,3 +183,10 @@ body:has(#cmpbox2, #cmpbox.cmpbox) {
 #shopify-pc__banner {
 	display: none !important;
 }
+
+/**
+ * Cookie First
+ */
+.cookiefirst-root {
+	display: none !important;
+}
