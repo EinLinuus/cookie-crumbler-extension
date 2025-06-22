@@ -24,3 +24,31 @@
         console.log('[Cookie Crumbler] Osano consent banner rejected');
     })
 })();
+
+/**
+ * FC Consent
+ */
+window.addEventListener('load', () => {
+    const wrapper = document.querySelector('.fc-consent-root');
+    if(!wrapper) {
+        return;
+    }
+
+    const manageOptions = wrapper.querySelector('.fc-cta-manage-options');
+    if(!manageOptions) {
+        console.warn('[Cookie Crumbler] FC Consent detected but button not found');
+        return;
+    }
+
+    manageOptions.click();
+
+    const confirmButton = wrapper.querySelector('.fc-confirm-choices');
+    if(!confirmButton) {
+        console.warn('[Cookie Crumbler] FC Consent detected but save button not found');
+        return;
+    }
+
+    confirmButton.click();
+
+    console.log('[Cookie Crumbler] FC Consent detected and rejected');
+})

@@ -169,3 +169,10 @@ body:has(#cmpbox2, #cmpbox.cmpbox) {
 .osano-cm-window {
 	display: none !important;
 }
+
+/**
+ * FC Consent
+ */
+.fc-consent-root {
+	display: none !important;
+}
