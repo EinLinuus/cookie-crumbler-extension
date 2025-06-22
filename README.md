@@ -41,6 +41,7 @@ The following cookie banners can't be rejected yet but are still hidden:
 - TX OM Consent
 - HubSpot
 - Nord Security
+- Reddit
 
 ## Contributing
 

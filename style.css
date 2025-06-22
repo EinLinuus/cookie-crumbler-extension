@@ -204,3 +204,10 @@ body:has(#cmpbox2, #cmpbox.cmpbox) {
 #consent-widget-container {
 	display: none !important;
 }
+
+/**
+ * Reddit
+ */
+[bundlename="reddit_cookie_banner"] {
+	display: none !important;
+}
