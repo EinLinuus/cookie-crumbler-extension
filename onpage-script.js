@@ -52,3 +52,17 @@ window.addEventListener('load', () => {
 
     console.log('[Cookie Crumbler] FC Consent detected and rejected');
 })
+
+/**
+ * Shopify PC Banner
+ */
+window.addEventListener('load', () => {
+    const rejectButton = document.querySelector('#shopify-pc__banner__btn-decline');
+    if(!rejectButton) {
+        return;
+    }
+
+    rejectButton.click();
+
+    console.log('[Cookie Crumbler] Shopify PC Banner found and rejected');
+});

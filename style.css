@@ -176,3 +176,10 @@ body:has(#cmpbox2, #cmpbox.cmpbox) {
 .fc-consent-root {
 	display: none !important;
 }
+
+/**
+ * Shopify PC Banner
+ */
+#shopify-pc__banner {
+	display: none !important;
+}
