@@ -8,6 +8,14 @@ Make surfing the web fun again by hiding all those stupid cookie banners!
 > If you encounter any issue, please open an issue on GitHub.
 > **Make sure to disable this extension on websites where it causes issues before reaching out to the developers of the website.**
 
+## Installation
+
+You can find links to all supported browsers on this page:
+
+[ihatecookiebanners.com](https://ihatecookiebanners.com/)
+
+[![Cookie Banners? No, Thanks.](ad.png)](https://ihatecookiebanners.com/)
+
 ## Supported Cookie Banners
 
 This extension detects the following cookie banners and rejects them:
