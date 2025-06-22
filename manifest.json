@@ -15,5 +15,11 @@
 			"css": ["style.css"],
 			"run_at": "document_start"
 		}
+	],
+	"web_accessible_resources": [
+		{
+			"resources": ["onpage-script.js"],
+			"matches": ["<all_urls>"]
+		}
 	]
 }

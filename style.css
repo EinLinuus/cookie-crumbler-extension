@@ -162,3 +162,10 @@ body:has(#cmpbox2, #cmpbox.cmpbox) {
 .tx-om-cookie-consent {
 	display: none !important;
 }
+
+/**
+ * Osano
+ */
+.osano-cm-window {
+	display: none !important;
+}

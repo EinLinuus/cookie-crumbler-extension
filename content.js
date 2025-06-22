@@ -1,5 +1,14 @@
 console.log("[Cookie Crumbler] Cookie Crumbler active!");
 
+document.addEventListener('DOMContentLoaded', () => {
+	const script = document.createElement('script');
+	script.setAttribute('type', 'text/javascript');
+	script.setAttribute('data-loaded-by', 'cookie-crumbler-extension');
+	script.setAttribute('src', chrome.runtime.getURL('onpage-script.js'));
+
+	document.head.appendChild(script);
+});
+
 /**
  * Borlabs Cookie
  */
