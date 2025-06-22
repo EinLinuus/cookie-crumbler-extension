@@ -21,6 +21,10 @@ This extension detects the following cookie banners and rejects them:
 - Iubenda
 - CMP2
 - Cookie Information
+- Osano
+- FC Consent
+- Shopify PC Banner
+- CookieFirst
 
 The following cookie banners can't be rejected yet but are still hidden:
 
@@ -35,6 +39,7 @@ The following cookie banners can't be rejected yet but are still hidden:
 - Termly
 - Wix CCSU
 - TX OM Consent
+- HubSpot
 
 ## Contributing
 
