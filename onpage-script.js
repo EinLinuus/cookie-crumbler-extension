@@ -80,3 +80,30 @@ window.addEventListener('load', () => {
 
     console.log('[Cookie Crumbler] CookieFirst consent banner rejected');
 })
+
+/**
+ * Teavaro
+ */
+window.addEventListener('load', async () => {
+    if(typeof window.Teavaro === 'undefined') {
+        return;
+    }
+
+    let securityCounter = 10;
+    let rejectButton = null;
+    do {
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        securityCounter--;
+
+        rejectButton = document.querySelector('#teavaro_reject_button');
+    } while (securityCounter > 0 && !rejectButton);
+
+    if(!rejectButton) {
+        console.warn('[Cookie Crumbler] Teavaro detected but no reject button found');
+        return;
+    }
+
+    rejectButton.click();
+
+    console.log('[Cookie Crumbler] Teavaro detected and rejected');
+})

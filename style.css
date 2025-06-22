@@ -211,3 +211,13 @@ body:has(#cmpbox2, #cmpbox.cmpbox) {
 [bundlename="reddit_cookie_banner"] {
 	display: none !important;
 }
+
+/**
+ * Teavaro
+ */
+body.teavaro__overflow--disabled {
+	overflow: unset !important;
+}
+.teavaro__consent-manager__overlay {
+	display: none !important;
+}

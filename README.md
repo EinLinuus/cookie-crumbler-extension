@@ -25,6 +25,7 @@ This extension detects the following cookie banners and rejects them:
 - FC Consent
 - Shopify PC Banner
 - CookieFirst
+- Teavaro
 
 The following cookie banners can't be rejected yet but are still hidden:
 
